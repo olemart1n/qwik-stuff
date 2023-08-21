@@ -1,4 +1,4 @@
-import { component$, useContext, useSignal } from "@builder.io/qwik";
+import { component$, useContext } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { headerOne } from "~/context/navContext";
 import { links } from "~/lib/sub-header-links";

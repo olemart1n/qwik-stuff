@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { useContextProvider, useStore } from "@builder.io/qwik";
 import Items from "./items";
-import { todosContext } from "./contextId";
+import { todosContext, type TodosStore } from "./contextId";
 import UseContext from "~/md/useContext.md";
 export default component$(() => {
     useContextProvider(
