@@ -1,0 +1,131 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+html {
+    font-family: Verdana, sans-serif;
+}
+:root {
+    --qwik-dark-blue: #006ce9;
+    --qwik-light-blue: #18b6f6;
+    --qwik-light-purple: #ac7ff4;
+    --qwik-dark-purple: #713fc2;
+    --qwik-dirty-black: #1d2033;
+    --qwik-dark-background: #151934;
+    --qwik-dark-text: #ffffff;
+    max-width: 1300px;
+    margin: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+    position: relative;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 17% auto;
+}
+main h1 {
+    text-align: center;
+}
+.dark-mode {
+    background-color: rgba(30, 92, 120, 0.3);
+    transition: ease-in 0.5s;
+}
+.dark-mode-button {
+    all: unset;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+}
+main aside {
+    background-color: rgba(236, 242, 241, 0.5);
+    box-shadow: #18b6f6 1px 0 25px -15px;
+    margin-top: 2rem;
+}
+main aside nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+main aside nav a {
+    margin: 15px 0 15px 0;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+main aside nav a:hover {
+    background-color: #53c2ee;
+}
+header {
+    border-bottom: 2px solid grey;
+    padding: 1rem;
+    position: relative;
+}
+
+header nav {
+    justify-content: space-around;
+    display: flex;
+    width: 70%;
+}
+header nav a {
+    color: #3558d9;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border: #9196b678 1px solid;
+    border-radius: 4px;
+    padding: 0.3rem;
+    width: 8rem;
+    text-align: center;
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0 6px 24px,
+        rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+header nav a:hover {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.code {
+    background-color: rgba(196, 211, 228, 0.5);
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: larger;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+        sans-serif;
+    width: fit-content;
+    margin-top: 3rem;
+}
+.sub-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.active {
+    background-color: #53c2ee;
+}
