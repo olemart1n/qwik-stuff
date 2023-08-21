@@ -1,6 +1,6 @@
 
 
-### [Live] (https://link-url-here.org)
+### [Live] (https://qwik-stuff.netlify.app/)
 
 # Qwik City App ⚡️
 
